@@ -19,9 +19,17 @@ st.set_page_config(
 )
 
 BASE = os.path.dirname(os.path.abspath(__file__))
-OUT_DIR = os.path.join(BASE, "output")
-MODEL_PATH = os.path.join(OUT_DIR, "final_flower_cnn_model.keras")
-CLASS_PATH = os.path.join(OUT_DIR, "class_names.json")
+
+# Semua file berada di folder utama project
+OUT_DIR = BASE
+
+MODEL_PATH = os.path.join(
+    OUT_DIR, "final_flower_cnn_model.keras"
+)
+
+CLASS_PATH = os.path.join(
+    OUT_DIR, "class_names.json"
+)
 
 IMG_SIZE = (160, 160)
 CONF_THRESHOLD = 60
